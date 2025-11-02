@@ -1,9 +1,11 @@
 # NovaHost WHMCS Template
 
-A dark, neon-accented WHMCS template kit tailored for hosting providers. The suite includes dedicated pages for shared hosting, managed VPS, bare-metal servers, an order form wizard, and a client-area login/register experience.
+A dark, neon-accented WHMCS template kit tailored for hosting providers. The suite includes a polished homepage, catalog-style store, dedicated pages for shared hosting, managed VPS, bare-metal servers, an order form wizard, and a client-area login/register experience.
 
 ## Pages
 
+- **index.html** – Hero-led homepage introducing the NovaHost suite with testimonials and metrics.
+- **store.html** – Product catalog featuring shared, VPS, dedicated, and add-on templates.
 - **hosting.html** – Shared hosting landing page with feature highlights and plan cards.
 - **vps.html** – Managed VPS showcase with comparison table.
 - **dedicated.html** – Dedicated server catalog and data-centre overview.
