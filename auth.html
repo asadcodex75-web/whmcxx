@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NovaHost | Client Area</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <div class="container hero-content">
+        <nav>
+          <div class="brand">Nova<span>Host</span></div>
+          <ul>
+            <li><a href="hosting.html">Web Hosting</a></li>
+            <li><a href="vps.html">Cloud VPS</a></li>
+            <li><a href="dedicated.html">Dedicated</a></li>
+            <li><a href="order.html">Order</a></li>
+            <li><a href="auth.html" class="cta">Client Area</a></li>
+          </ul>
+        </nav>
+        <div class="badge">Secure Client Area</div>
+        <div class="hero-content">
+          <h1>Login or Create Your NovaHost Account</h1>
+          <p>
+            The dual-panel card makes it easy for existing clients to sign in while
+            showcasing benefits for new customers. Drop the entire block into
+            <code>clientareahome.tpl</code> or any standalone landing page.
+          </p>
+        </div>
+      </div>
+    </header>
+
+    <main class="section">
+      <div class="container auth-container">
+        <section class="auth-card">
+          <h2>Existing Clients</h2>
+          <form class="order-form" action="#" method="post">
+            <div class="field-group">
+              <label for="login-email">Email Address</label>
+              <input type="email" id="login-email" name="login-email" placeholder="you@example.com" required />
+            </div>
+            <div class="field-group">
+              <label for="login-password">Password</label>
+              <input type="password" id="login-password" name="login-password" placeholder="••••••••" required />
+            </div>
+            <a class="button secondary" href="#">Forgot password?</a>
+            <button class="button primary" type="submit">Login Securely</button>
+          </form>
+        </section>
+        <section class="auth-card">
+          <h2>New to NovaHost?</h2>
+          <p>
+            Create an account to manage services, invoices, and support tickets inside a
+            beautifully styled WHMCS client area.
+          </p>
+          <form class="order-form" action="#" method="post">
+            <div class="field-group">
+              <label for="register-name">Full Name</label>
+              <input type="text" id="register-name" name="register-name" placeholder="Alex Morgan" required />
+            </div>
+            <div class="field-group">
+              <label for="register-email">Email Address</label>
+              <input type="email" id="register-email" name="register-email" placeholder="you@example.com" required />
+            </div>
+            <div class="split">
+              <div class="field-group">
+                <label for="register-password">Password</label>
+                <input type="password" id="register-password" name="register-password" placeholder="••••••••" required />
+              </div>
+              <div class="field-group">
+                <label for="register-confirm">Confirm Password</label>
+                <input type="password" id="register-confirm" name="register-confirm" placeholder="••••••••" required />
+              </div>
+            </div>
+            <button class="button primary" type="submit">Create Account</button>
+          </form>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <div class="footer-grid">
+          <div>
+            <div class="brand">Nova<span>Host</span></div>
+            <p>
+              A modern WHMCS template suite for web hosting companies who value both
+              aesthetics and performance.
+            </p>
+          </div>
+          <div>
+            <h4>Products</h4>
+            <ul>
+              <li><a href="hosting.html">Shared Hosting</a></li>
+              <li><a href="vps.html">Managed VPS</a></li>
+              <li><a href="dedicated.html">Dedicated Servers</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Company</h4>
+            <ul>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Blog</a></li>
+              <li><a href="#">Status</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Support</h4>
+            <ul>
+              <li><a href="order.html">Knowledgebase</a></li>
+              <li><a href="auth.html">Client Login</a></li>
+              <li><a href="#">Network SLA</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>© 2024 NovaHost Template Suite. Built for WHMCS.</p>
+          <p>Made with precision for hosting providers worldwide.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
