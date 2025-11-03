@@ -1,79 +1,31 @@
-{assign var="filename" value="dedicated-server"}
+{assign var="activeNav" value="dedicated-server"}
 {include file="header.tpl" bodyclass="page-dedicated" pagetitle="NovaHost | Dedicated Servers" skipto="main-content"}
-<header class="hero hero-product">
-  <div class="container hero-content">
-    {include file="includes/navigation.tpl"}
-    <div class="badge">Bare Metal. Maximum Control.</div>
-    <div class="split">
-      <div>
-        <h1>Dedicated Servers Tuned for Mission Critical Workloads</h1>
-        <p>
-          Showcase high-impact specs and deliver transparent pricing tables that map
-          straight into your WHMCS configurable options.
-        </p>
-        <div class="hero-actions">
-          <a class="button primary" href="{$WEB_ROOT}/cart.php?a=add&amp;gid=3">Build Your Server</a>
-          <a class="button secondary" href="{$WEB_ROOT}/shared-hosting.php">Need Shared?</a>
-        </div>
-      </div>
-      <div class="hero-card">
-        <h3>Featured Data Centers</h3>
-        <ul>
-          <li>Dallas, TX – Tier IV facility</li>
-          <li>Frankfurt, DE – ISO 27001 certified</li>
-          <li>Singapore, SG – Ultra-low latency</li>
-          <li>London, UK – Carbon neutral campus</li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</header>
-
-<main id="main-content">
-  <section class="section">
+<main id="main-content" class="main-content">
+  <section class="hero hero-sub">
     <div class="container">
-      <div class="section-header">
-        <h2>Dedicated Server Catalog</h2>
-        <p>
-          Each server card includes optional highlights and CTA states optimised for
-          the WHMCS "Configure Product" step. Swap imagery for icons or plan badges as
-          needed.
-        </p>
-      </div>
-      <div class="cards-grid">
-        <article class="card">
-          <h3>Fusion R5</h3>
-          <p class="price">$145<span>/mo</span></p>
+      <div class="hero-grid">
+        <div>
+          <div class="badge">Bare Metal Performance</div>
+          <h1>Power demanding workloads with dedicated servers</h1>
+          <p>
+            Present enterprise-ready hardware, compliance badges, and service-level
+            guarantees inside a refined layout that builds trust from the first
+            scroll.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="{$WEB_ROOT}/cart.php?a=add&amp;pid=7">Request a Server</a>
+            <a class="button secondary" href="{$WEB_ROOT}/store.php">View All Templates</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h3>Enterprise Specs</h3>
           <ul>
-            <li>AMD Ryzen™ 9 7950X</li>
-            <li>64 GB DDR5 ECC RAM</li>
-            <li>2 × 1 TB NVMe Gen4</li>
-            <li>10 TB Premium Bandwidth</li>
+            <li>Intel &amp; AMD options with up to 128 GB RAM</li>
+            <li>NVMe storage arrays &amp; hardware RAID</li>
+            <li>Redundant networking with 99.99% uptime</li>
+            <li>24/7 NOC and managed support</li>
           </ul>
-          <a class="button primary" href="{$WEB_ROOT}/cart.php?a=add&amp;pid=20">Configure Fusion</a>
-        </article>
-        <article class="card">
-          <h3>Titan XE</h3>
-          <p class="price">$210<span>/mo</span></p>
-          <ul>
-            <li>Intel Xeon® Silver 4410Y</li>
-            <li>128 GB DDR5 ECC RAM</li>
-            <li>2 × 1.92 TB NVMe + 4 × 4 TB HDD</li>
-            <li>20 TB Premium Bandwidth</li>
-          </ul>
-          <a class="button primary" href="{$WEB_ROOT}/cart.php?a=add&amp;pid=21">Configure Titan</a>
-        </article>
-        <article class="card">
-          <h3>Quantum DL</h3>
-          <p class="price">$395<span>/mo</span></p>
-          <ul>
-            <li>Dual Intel Xeon® Gold 5416S</li>
-            <li>256 GB DDR5 ECC RAM</li>
-            <li>4 × 3.84 TB NVMe</li>
-            <li>40 TB Premium Bandwidth</li>
-          </ul>
-          <a class="button primary" href="{$WEB_ROOT}/cart.php?a=add&amp;pid=22">Configure Quantum</a>
-        </article>
+        </div>
       </div>
     </div>
   </section>
@@ -81,35 +33,87 @@
   <section class="section">
     <div class="container">
       <div class="section-header">
-        <h2>Included Premium Features</h2>
+        <h2>Compare dedicated plans</h2>
+        <p>
+          Use the responsive comparison table to showcase specs and highlight
+          recommended options without overwhelming prospects.
+        </p>
       </div>
-      <div class="features">
-        <div class="feature">
-          <h3>Hybrid DDoS Shield</h3>
+      <div class="table-wrapper">
+        <table class="comparison-table">
+          <thead>
+            <tr>
+              <th>Plan</th>
+              <th>CPU</th>
+              <th>Memory</th>
+              <th>Storage</th>
+              <th>Bandwidth</th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Essential</td>
+              <td>Ryzen 5 5600X</td>
+              <td>32 GB DDR4</td>
+              <td>2 × 960 GB NVMe</td>
+              <td>20 TB</td>
+              <td><a class="button tertiary" href="{$WEB_ROOT}/cart.php?a=add&amp;pid=7">Order</a></td>
+            </tr>
+            <tr class="highlight">
+              <td>Professional</td>
+              <td>Intel Xeon Silver</td>
+              <td>64 GB DDR4</td>
+              <td>4 × 1.92 TB NVMe</td>
+              <td>30 TB</td>
+              <td><a class="button primary" href="{$WEB_ROOT}/cart.php?a=add&amp;pid=8">Order</a></td>
+            </tr>
+            <tr>
+              <td>Enterprise</td>
+              <td>Dual AMD EPYC</td>
+              <td>128 GB DDR4</td>
+              <td>8 × 1.92 TB NVMe</td>
+              <td>40 TB</td>
+              <td><a class="button tertiary" href="{$WEB_ROOT}/cart.php?a=add&amp;pid=9">Order</a></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Trusted by serious workloads</h2>
+      </div>
+      <div class="feature-pairs">
+        <div class="feature-pair">
+          <h3>Security first</h3>
           <p>
-            Layer 3/4 always-on scrubbing backed by on-demand Layer 7 filtering keeps
-            production workloads online.
+            Highlight compliance frameworks, DDoS mitigation, and private network
+            isolation using ready-to-style list blocks.
           </p>
         </div>
-        <div class="feature">
-          <h3>Remote Management</h3>
+        <div class="feature-pair">
+          <h3>Managed onboarding</h3>
           <p>
-            IPMI, KVM-over-IP, and full power controls included without additional
-            licensing fees.
+            Outline migration assistance, rack-and-stack services, and on-demand
+            consultations with calm, confident visuals.
           </p>
         </div>
-        <div class="feature">
-          <h3>24/7 NOC Support</h3>
+        <div class="feature-pair">
+          <h3>Global reach</h3>
           <p>
-            Dedicated Slack, phone, and ticket queues ensure your team reaches us the
-            moment you need assistance.
+            Promote regional availability with map callouts and data centre stats
+            that align perfectly with the colour palette.
           </p>
         </div>
-        <div class="feature">
-          <h3>Flexible Upgrades</h3>
+        <div class="feature-pair">
+          <h3>Reliable billing</h3>
           <p>
-            Hot swap drives, burst bandwidth pools, and GPU add-ons are pre-configured
-            within the template.
+            Reinforce trust with transparent pricing tables and WHMCS invoicing
+            that inherits the same refined styling.
           </p>
         </div>
       </div>

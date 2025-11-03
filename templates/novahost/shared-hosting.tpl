@@ -1,48 +1,47 @@
-{assign var="filename" value="shared-hosting"}
-{include file="header.tpl" bodyclass="page-shared" pagetitle="NovaHost | Premium Web Hosting" skipto="main-content"}
-<header class="hero hero-product">
-  <div class="container hero-content">
-    {include file="includes/navigation.tpl"}
-    <div class="badge">Crafted for WHMCS</div>
-    <div class="split">
-      <div>
-        <h1>Lightning-Fast Web Hosting for Ambitious Projects</h1>
-        <p>
-          Deliver seamless experiences for your clients with a template that feels
-          bespoke. The NovaHost theme pairs a polished UI with conversion-focused
-          sections optimised for WHMCS order flows.
-        </p>
-        <div class="hero-actions">
-          <a class="button primary" href="{$WEB_ROOT}/cart.php?a=add&amp;pid=1">Launch Order Wizard</a>
-          <a class="button secondary" href="{$WEB_ROOT}/vps-hosting.php">Explore Cloud VPS</a>
+{assign var="activeNav" value="shared-hosting"}
+{include file="header.tpl" bodyclass="page-shared" pagetitle="NovaHost | Premium Shared Hosting" skipto="main-content"}
+<main id="main-content" class="main-content">
+  <section class="hero hero-sub">
+    <div class="container">
+      <div class="hero-grid">
+        <div>
+          <div class="badge">Crafted for WHMCS</div>
+          <h1>Lightning-Fast Shared Hosting for Growing Projects</h1>
+          <p>
+            Deliver effortless onboarding with a clean, professional template that
+            mirrors the reliability of your infrastructure. NovaHost keeps copy,
+            pricing, and CTAs organised so visitors can choose confidently.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="{$WEB_ROOT}/cart.php?a=add&amp;pid=1">Launch Order Wizard</a>
+            <a class="button secondary" href="{$WEB_ROOT}/vps-hosting.php">Explore Cloud VPS</a>
+          </div>
+        </div>
+        <div class="hero-card">
+          <h3>Why NovaHost?</h3>
+          <ul>
+            <li>Purpose-built for WHMCS 8+</li>
+            <li>Order form blocks styled to match</li>
+            <li>Responsive &amp; accessible layouts</li>
+            <li>Easy colour and typography tweaks</li>
+          </ul>
         </div>
       </div>
-      <div class="hero-card">
-        <h3>Why NovaHost?</h3>
-        <ul>
-          <li>Ultra-optimised for WHMCS 8+</li>
-          <li>Built-in order form blocks</li>
-          <li>Responsive &amp; accessible UI</li>
-          <li>Custom accent palette &amp; gradients</li>
-        </ul>
-      </div>
     </div>
-  </div>
-</header>
+  </section>
 
-<main id="main-content">
   <section class="section">
     <div class="container">
       <div class="section-header">
         <h2>Shared Hosting Plans</h2>
         <p>
-          Perfect for agencies, freelancers, and digital brands needing effortless
-          provisioning through WHMCS. Built-in cross sell banners and feature cards
-          keep your clients exploring.
+          Built for agencies, freelancers, and digital brands who expect reliable
+          provisioning through WHMCS. Built-in cross sell banners and feature
+          cards keep customers exploring.
         </p>
       </div>
-      <div class="cards-grid">
-        <article class="card">
+      <div class="pricing-grid">
+        <article class="plan">
           <h3>Launch</h3>
           <p class="price">$4.99<span>/mo</span></p>
           <ul>
@@ -53,7 +52,8 @@
           </ul>
           <a class="button primary" href="{$WEB_ROOT}/cart.php?a=add&amp;pid=1">Order Launch</a>
         </article>
-        <article class="card">
+        <article class="plan popular">
+          <div class="tag">Most Popular</div>
           <h3>Growth</h3>
           <p class="price">$9.99<span>/mo</span></p>
           <ul>
@@ -64,7 +64,7 @@
           </ul>
           <a class="button primary" href="{$WEB_ROOT}/cart.php?a=add&amp;pid=2">Order Growth</a>
         </article>
-        <article class="card">
+        <article class="plan">
           <h3>Scale</h3>
           <p class="price">$19.99<span>/mo</span></p>
           <ul>
@@ -101,10 +101,10 @@
           </p>
         </div>
         <div class="feature">
-          <h3>Dark-Mode Native</h3>
+          <h3>Beautifully Clear</h3>
           <p>
-            Designed with eye-comforting gradients and neon accents that feel at
-            home in modern dashboards.
+            Crisp whites with blue accents keep the interface bright and readable
+            on any device or lighting condition.
           </p>
         </div>
         <div class="feature">
